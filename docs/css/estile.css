@@ -1,0 +1,377 @@
+body::-webkit-scrollbar{
+    width: 6px;
+    height: 10px;
+    background-color: #004F6B;
+    /* display: none; */
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #007DAB;
+
+    border-radius: 4px;
+}
+
+
+
+.portada{
+    width: calc(100vw - var(--scrollbar));
+    height: 100vh;
+}
+
+#particles-js{
+    position: relative;
+    width: inherit;
+    height: 100vh;
+    background-color: #1a2d35;
+    background-image: url(../recursos/img-fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+.presentacion{
+    position: absolute;
+    width: inherit;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion-contenedor{
+    width: 90%;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-presentacion{
+    width: 200px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.img-presentacion img{
+    width: 80%;
+    height: 90%;
+    border-radius: inherit;
+    object-fit: cover;
+    filter: brightness(105%);
+    border: 2px solid #ebebeb;
+}
+
+.content-presentacion{
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+.contenedor-principal{
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.content-presentacion h2,
+.content-presentacion p{
+    color: #cacaca;
+}
+
+.content-presentacion h2{
+    font-size: 50px;
+}
+
+.content-presentacion h2:nth-child(2){
+    color: #898437;
+    background: linear-gradient(#b5b282, #403d03) ;
+    -webkit-background-clip: text;
+}
+
+.content-presentacion p{
+    font-size: 25px;
+    color: #cacaca;
+}
+
+.principal{
+    width: calc(100vw - var(--scrollbar));
+    height: auto;
+    background-color: #00161e;
+}
+
+.acerca-de,
+.habilidades{
+    padding: 90px 0 120px;
+    border-bottom: 1px solid #515250;
+}
+
+.acerca-de p,
+.acerca-de h2{
+    color: white;
+}
+
+.principal h2{
+    width: fit-content;
+    margin: 30px auto 50px;
+    color: transparent;
+    background: linear-gradient(#b5b282, #403d03) ;
+    -webkit-background-clip: text;
+    padding-bottom: 5px;
+    border-bottom: 5px solid  #403d03;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+}
+
+.contenedor-principal{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* =====| Acerca de |===== */
+
+.informacion p {
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+.button-CV{
+    display: inline-block;
+    background-color: #007DAB;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 50px 0;
+    border: 3px solid transparent;
+}
+
+.button-CV:hover{
+    background-color: rgb(227, 227, 227);
+    border: 3px solid #007DAB;
+    color: #007DAB;
+}
+
+/* =====| Habilidades |====== */
+
+.habilidades h2{
+    font-size: 3rem;
+}
+
+.habilidades h2:nth-child(2){
+    margin: 50px auto;
+}
+
+.grid-habilidades{
+    background-color: #112E38;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img-habilidades{
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #29434c;
+    margin: 10px 10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-habilidades img{
+    height: 90px;
+    width: auto;
+    margin-bottom: 20px;
+    filter: none;
+    transition: all .5s;
+}
+
+.img-habilidades p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.img-habilidades:hover img{
+    filter: none;
+    height: 100px;
+}
+
+/* =====| Portafolio |===== */
+
+.portafolio{
+    border-bottom: 1px solid #515250;
+    padding: 90px 0 120px;
+}
+
+.grid-portafolio{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 50px;
+}
+
+.proyecto{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #112E38;
+    border-radius: 10px;
+}
+
+.proyecto__img{
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.proyecto__descripcion{
+    width: 100%;
+}
+
+.proyecto__descripcion p{
+    color: white;
+    line-height: 25px;
+    padding: 15px 0;
+    letter-spacing: 1.5px;
+}
+
+.descripcion-enlaces{
+    display: block;
+}
+
+.descripcion-enlaces a{
+    padding: 10px;
+    background-color: #004F6B;
+    border-radius: 5px;
+    min-width: 120px;
+    color: #ebebeb;
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    margin: 10px 0 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.descripcion-enlaces a:first-child{
+    margin: 0;
+}
+
+/* =====| Contactos |===== */
+
+.contactos{
+    margin: 30px 0 30px;
+    padding: 60px 0;
+}
+
+.contactos > p{
+    color: white;
+    padding: 0 15px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+.grid-contactos,
+.grid-contactos *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-contactos{
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 50px 0 30px;
+}
+
+.contactos__item{
+    display: block;
+    width: 50px;
+    cursor: pointer;
+}
+
+.contactos__item a{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    /* -webkit-box-pack: center;
+    -webkit-box-align: center; */
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contactos__item a svg{ fill: #00161e; }
+
+/* =====| footer |===== */
+
+.footer{
+    padding: 20px 0;
+    border-top: 1px solid #F3F3F3;
+}
+
+.footer p{
+    color: #F3F3F3;
+    letter-spacing: 1.5px;
+}
+
+
+@media screen and (min-width: 48em){
+    .img-habilidades img{
+        filter: grayscale(100%);
+    }
+
+    .presentacion-contenedor{
+        flex-direction: row;
+        max-height: 600px;
+    }
+
+    .content-presentacion{
+        height: inherit;
+        margin-left: 25px;
+        margin-top: 0;
+    }
+
+    .contenedor-principal{
+        width: 70%;
+    }
+
+    .img-presentacion img{
+        filter: brightness(100%);
+    }
+
+}
+
+@media screen and (min-width: 75em){
+
+    .contenedor-principal{
+        width: 65%;
+    }
+
+    .proyecto{
+        display: flex;
+    }
+    
+    .proyecto:nth-child(2n+0){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .proyecto__img{
+        width: 60%;
+    }
+    .proyecto__descripcion{
+        width: 40%;
+        padding: 0 10px;
+    }
+}

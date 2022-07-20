@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Raleway:wght@100;700&display=swap');
+
+:root{
+    --scrollbar: 10px;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::after, *::before{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Mulish', 'Times New Roman', Times, serif;
+}
+
+*{ font-size: 1rem; }
+
+body{
+    width: calc(100vw - var(--scrollbar));
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+
+h1{ font-size: 2rem; }
+
+h2{ font-size: 1.7rem; }
+
+h3{ font-size: 1.5rem; }
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
