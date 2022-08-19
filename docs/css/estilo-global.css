@@ -7,13 +7,16 @@
 html{
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
+
 
 *, *::after, *::before{
     position: relative;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     text-align: center;
     font-family: 'Mulish', 'Times New Roman', Times, serif;
 }
@@ -23,6 +26,7 @@ html{
 body{
     width: calc(100vw - var(--scrollbar));
     position: relative;
+    overflow-x: hidden;
 }
 
 img{
@@ -36,6 +40,10 @@ h1{ font-size: 2rem; }
 h2{ font-size: 1.7rem; }
 
 h3{ font-size: 1.5rem; }
+
+li{
+    list-style: none;
+}
 
 a{
     text-decoration: none;

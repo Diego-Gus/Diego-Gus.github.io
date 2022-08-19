@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diego Chambi | Desarrollador Web</title>
+    <link rel="icon" type="image/png" sizes="16x16"  href="./recursos/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="transparent">
+    <meta name="theme-color" content="transparent">
     <link rel="stylesheet" href="css/estilo-global.css">
     <link rel="stylesheet" href="css/estile.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
+    <header class="cabecera">
+        <div class="container-cabecera">
+            <div class="img-menu">
+                <img src="./recursos/logo2.png" alt="">
+            </div>
+            <div class="menu-pagina">
+                <div class="menu-pagina__contenido"></div>
+            </div>
+            <nav class="menuEscritorio" id="menuEscritorio">
+                <ul>
+                    <li class="activo"><a href="#sobreMi">Sobre mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li class="activo"><a href="#sobreMi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>        
+    </header>
+    
     <div class="portada">
         <div id="particles-js"></div>
         <div class="presentacion">
@@ -27,15 +57,15 @@
     </div>
     <main class="principal">
         <div class="contenedor-principal">
-            <section class="acerca-de">
+            <section class="acerca-de" id="sobreMi">
                 <h2>Sobre mí</h2>
                 <div class="informacion">
                     <p>Soy estudiante de Ingeniería en Sistemas apasionado por la programación y la adopcion de nuevas tecnologias, actualmente enfocado en el desarrollo Web.</p><br>
                     <p>Siempre en búsqueda de nuevos conocimientos y listo para iniciar un nuevo reto.</p>
                 </div>
-                <a href="./recursos/Curriculum Vitae con foto hombre profesional y sencillo.pdf" target="_blank" class="button-CV">Descargar CV</a>
+                <a href="./recursos/CV Diego Chambi.pdf" target="_blank" class="button-CV">Descargar CV</a>
             </section>
-            <section class="habilidades">
+            <section class="habilidades" id="habilidades">
                 <h2>Habilidades</h2>
                 <div class="grid-habilidades aprendido">
                     <div class="img-habilidades">
@@ -66,14 +96,26 @@
                         <p>React JS</p>
                     </div>
                     <div class="img-habilidades">
-                        <img src="./recursos/figma.svg" alt="figma">
-                        <p>Figma</p>
+                        <img src="./recursos/laravel.svg" alt="figma">
+                        <p>Laravel</p>
                     </div>
                 </div>
             </section>
-            <section class="portafolio">
+            <section class="portafolio" id="portafolio">
                 <h2>Portafolio</h2>
                 <div class="grid-portafolio">
+                    <div class="proyecto">
+                        <div class="proyecto__img">
+                            <img src="./recursos/Horas-extras.png" alt="">
+                        </div>
+                        <div class="proyecto__descripcion">
+                            <p>Aplicacion que permite registrar empleados y horas extras de trabajo de estos mismos con sistema de autenticación. Realizado con el lenguaje PHP y base de datos MySql <br> Email: admin123@gmail.com <br> Contraseña: admin.</p>
+                            <div class="descripcion-enlaces">
+                                <a href="http://horas-extras.epizy.com/" target="_blank">Ver Proyecto</a>
+                                <a href="https://github.com/Diego-Gus/Horas-Extras" target="_blank">Ver codigo en GitHub</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="proyecto">
                         <div class="proyecto__img">
                             <img src="./recursos/App de Clima.png" alt="">
@@ -100,7 +142,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contactos">
+            <section class="contactos" id="contactos">
                 <h2>Hablemos</h2>
                 <p>Si tienes alguna consulta no dudes en escribirme en una de estas redes.</p>
                 <div class="grid-contactos">
