@@ -32,7 +32,7 @@ body{
 img{
     width: 100%;
     height: auto;
-    border-radius: inherit;
+    border-radius: inherit;    
 }
 
 h1{ font-size: 2rem; }
