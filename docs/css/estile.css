@@ -1,3 +1,4 @@
+Holaaa
 body::-webkit-scrollbar{
     width: 6px;
     height: 10px;
@@ -6,7 +7,6 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
     background-color: #007DAB;
-
     border-radius: 4px;
 }
 
@@ -313,8 +313,9 @@ body::-webkit-scrollbar-thumb{
 }
 
 .img-habilidades{
-    width: 180px;
-    height: 180px;
+    /* Hubo cambio */
+    width: 130px;
+    height: 130px;
     border-radius: 10px;
     background-color: #29434c;
     margin: 10px 10px;
@@ -326,7 +327,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .img-habilidades img{
-    height: 90px;
+    height: 70px;
     width: auto;
     margin-bottom: 20px;
     filter: none;
@@ -335,14 +336,14 @@ body::-webkit-scrollbar-thumb{
 
 .img-habilidades p{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .img-habilidades:hover img{
     filter: none;
-    height: 100px;
+    height: 80px;
 }
 
 /* =====| Portafolio |===== */
@@ -541,6 +542,11 @@ body::-webkit-scrollbar-thumb{
     #menuEscritorio ul .activo::after,
     #menuEscritorio ul li:hover::after{
         width: 30px;
+    }
+
+    .img-habilidades{
+        width: 150px;
+        height: 150px;
     }
 }
 
